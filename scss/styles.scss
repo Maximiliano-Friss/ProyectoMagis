@@ -1,4 +1,5 @@
 @import 'header';
+@import 'footer';
 @import 'fonts';
 
 $body-bg: #F5F5F5;
@@ -17,7 +18,5 @@ body {
 	min-height: 100%;
 }
 
-footer {
-	justify-self: flex-end;
-}
+
 

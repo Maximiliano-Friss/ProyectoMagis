@@ -2,29 +2,33 @@ header {
 	display: grid;
 	grid-template-columns: repeat(12,1fr);
 	height: 6rem;
-    
-    .brand_container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        grid-column: 2/3;
-    
-        img {
-            width: 4rem;
-        }
-    }
+	
+	.brand_container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		grid-column: 2/3;
 
-    .navbar_container {
-        grid-column: 3/-1;
-        
-        a {
-            text-decoration: none;
-        }
-        
-        .navbar_links_container {
-            display: flex;
-            justify-content: space-evenly;
-            width: 100%;
-        }
-    }
+		img {
+				width: 4rem;
+		}
+	}
+
+	.navbar_container {
+		grid-column: 3/-1;
+
+		.navbar_link {
+			text-decoration: none;
+		}
+
+		.navbar_link_special {
+			text-decoration: underline;
+		}
+		
+		.navbar_links_container {
+			display: flex;
+			justify-content: space-evenly;
+			width: 100%;
+		}
+	}
 }

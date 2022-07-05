@@ -11,8 +11,10 @@ header {
       width: 4rem; }
   header .navbar_container {
     grid-column: 3/-1; }
-    header .navbar_container a {
+    header .navbar_container .navbar_link {
       text-decoration: none; }
+    header .navbar_container .navbar_link_special {
+      text-decoration: underline; }
     header .navbar_container .navbar_links_container {
       display: flex;
       justify-content: space-evenly;
@@ -210,10 +212,10 @@ sup {
   top: -.5em; }
 
 a {
-  color: #0d6efd;
+  color: #212427;
   text-decoration: underline; }
   a:hover {
-    color: #0a58ca; }
+    color: #1a1d1f; }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
@@ -2556,10 +2558,10 @@ textarea.form-control-lg {
 
 .btn-link {
   font-weight: 400;
-  color: #0d6efd;
+  color: #212427;
   text-decoration: underline; }
   .btn-link:hover {
-    color: #0a58ca; }
+    color: #1a1d1f; }
   .btn-link:disabled, .btn-link.disabled {
     color: #6c757d; }
 
@@ -2943,14 +2945,14 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #0d6efd;
+  color: #212427;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
     .nav-link {
       transition: none; } }
   .nav-link:hover, .nav-link:focus {
-    color: #0a58ca; }
+    color: #1a1d1f; }
   .nav-link.disabled {
     color: #6c757d;
     pointer-events: none;
@@ -3639,7 +3641,7 @@ textarea.form-control-lg {
 .page-link {
   position: relative;
   display: block;
-  color: #0d6efd;
+  color: #212427;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -3649,12 +3651,12 @@ textarea.form-control-lg {
       transition: none; } }
   .page-link:hover {
     z-index: 2;
-    color: #0a58ca;
+    color: #1a1d1f;
     background-color: #e9ecef;
     border-color: #dee2e6; }
   .page-link:focus {
     z-index: 3;
-    color: #0a58ca;
+    color: #1a1d1f;
     background-color: #e9ecef;
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); }
@@ -7835,8 +7837,7 @@ textarea.form-control-lg {
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat';
-  color: #212427; }
+  font-family: 'Montserrat'; }
 
 body {
   display: flex;

@@ -2,14 +2,13 @@
 @import 'fonts';
 
 $body-bg: #F5F5F5;
+$link-color: #212427;
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 * {
 	margin: 0;
 	padding: 0;
 	font-family: 'Montserrat';
-	color: #212427;
-	;
 }
 
 body {

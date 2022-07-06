@@ -44,7 +44,7 @@ main .main_portada {
     margin: 2rem 0rem; }
 
 main .main_conocenos {
-  background-color: #FAB802;
+  background-color: #F4D245;
   height: 26.8rem; }
   main .main_conocenos div {
     display: flex;
@@ -62,18 +62,29 @@ main .main_conocenos {
       main .main_conocenos div p a {
         text-decoration: underline;
         font-size: 1.5rem;
-        font-weight: 800; }
+        font-weight: 800;
+        filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25)); }
 
 main .main_mapa {
-  background-color: #F5F5F5; }
+  background-color: #F5F5F5;
+  height: 40rem; }
+  main .main_mapa .main_mapa_img {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 7rem; }
+    main .main_mapa .main_mapa_img img {
+      height: 530px;
+      width: 646px; }
   main .main_mapa div h2, main .main_mapa div .h2 {
     text-align: center;
-    text-transform: uppercase;
     font-weight: 800;
     margin: 2rem 0rem; }
   main .main_mapa div p {
-    text-align: center;
-    margin: 0rem 1rem 2rem 0rem; }
+    text-align: right; }
+  main .main_mapa div .mapa_location_p::before {
+    content: url(../assets/img/mapa_location_icon.png);
+    width: 1rem;
+    margin-right: 0.2rem; }
   main .main_mapa div div {
     margin: 2rem 0rem; }
     main .main_mapa div div .btn-secondary {
@@ -7907,6 +7918,7 @@ body {
   flex-direction: column;
   min-height: 100%; }
   body h2, body .h2 {
-    font-size: 3rem; }
+    font-size: 3rem;
+    filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25)); }
   body p {
     font-size: 1.5rem; }

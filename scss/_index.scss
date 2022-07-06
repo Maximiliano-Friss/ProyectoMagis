@@ -11,7 +11,7 @@ main {
         }
     }
     .main_conocenos{
-        background-color: #FAB802;
+        background-color: #F4D245;
         height: 26.8rem;
         div{
             display: flex;
@@ -27,27 +27,42 @@ main {
                 text-align: center;
                 margin: 2rem 0rem;
                 padding: 0 10%;
-
                 a {
                     text-decoration: underline;
                     font-size: 1.5rem;
                     font-weight: map-get($main_font_weight, titulo);
+                    filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
                 }
             }
         }
     }
     .main_mapa{
         background-color: #F5F5F5;
+        height: 40rem;
+        .main_mapa_img{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 7rem;
+            img{
+                height: 530px;
+                width: 646px;
+            }
+        }
         div{
             h2{
                 text-align: center;
-                text-transform: uppercase;
                 font-weight: map-get($main_font_weight, titulo);
                 margin: 2rem 0rem;
             }
             p{
-                text-align: center;
-                margin: 0rem 1rem 2rem 0rem;
+                text-align: right;
+            }
+            .mapa_location_p{
+                &::before{
+                    content: url(../assets/img/mapa_location_icon.png);
+                    width: 1rem;
+                    margin-right: 0.2rem;
+                }
             }
             div{
                 margin: 2rem 0rem;

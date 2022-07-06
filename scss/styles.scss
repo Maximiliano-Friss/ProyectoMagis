@@ -25,6 +25,10 @@ body {
     p{
         font-size: 1.5rem;
     }
+    .link_ver_mas{
+        font-weight: map-get($main_font_weight, ver_mas);
+        font-size: 1.25rem;
+    }
 }
 
 

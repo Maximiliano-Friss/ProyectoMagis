@@ -44,22 +44,32 @@ main .main_portada {
     margin: 2rem 0rem; }
 
 main .main_conocenos {
-  background-color: #FAB802; }
-  main .main_conocenos div h2, main .main_conocenos div .h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 2rem 0rem; }
-  main .main_conocenos div p {
-    text-align: center;
-    margin: 2rem 0rem; }
+  background-color: #FAB802;
+  height: 26.8rem; }
+  main .main_conocenos div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center; }
+    main .main_conocenos div h2, main .main_conocenos div .h2 {
+      text-align: center;
+      font-weight: 800;
+      margin: 2rem 0rem; }
+    main .main_conocenos div p {
+      text-align: center;
+      margin: 2rem 0rem;
+      padding: 0 10%; }
+      main .main_conocenos div p a {
+        text-decoration: underline;
+        font-size: 1.5rem;
+        font-weight: 800; }
 
 main .main_mapa {
   background-color: #F5F5F5; }
   main .main_mapa div h2, main .main_mapa div .h2 {
     text-align: center;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 800;
     margin: 2rem 0rem; }
   main .main_mapa div p {
     text-align: center;
@@ -68,7 +78,7 @@ main .main_mapa {
     margin: 2rem 0rem; }
     main .main_mapa div div .btn-secondary {
       width: 20%;
-      font-weight: bold;
+      font-weight: 800;
       text-transform: uppercase;
       color: #212427;
       background-color: #D9D9D9;
@@ -7896,3 +7906,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%; }
+  body h2, body .h2 {
+    font-size: 3rem; }
+  body p {
+    font-size: 1.5rem; }

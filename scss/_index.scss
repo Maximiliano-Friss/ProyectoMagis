@@ -11,17 +11,28 @@ main {
         }
     }
     .main_conocenos{
-        background-color: #FAB802; 
+        background-color: #FAB802;
+        height: 26.8rem;
         div{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
             h2{
                 text-align: center;
-                text-transform: uppercase;
-                font-weight: bold;
+                font-weight: map-get($main_font_weight, titulo);
                 margin: 2rem 0rem;
             }
             p{
                 text-align: center;
                 margin: 2rem 0rem;
+                padding: 0 10%;
+
+                a {
+                    text-decoration: underline;
+                    font-size: 1.5rem;
+                    font-weight: map-get($main_font_weight, titulo);
+                }
             }
         }
     }
@@ -31,7 +42,7 @@ main {
             h2{
                 text-align: center;
                 text-transform: uppercase;
-                font-weight: bold;
+                font-weight: map-get($main_font_weight, titulo);
                 margin: 2rem 0rem;
             }
             p{
@@ -42,7 +53,7 @@ main {
                 margin: 2rem 0rem;
                 .btn-secondary {
                     width: 20%;
-                    font-weight: bold;
+                    font-weight: map-get($main_font_weight, titulo);
                     text-transform: uppercase;
                     color: #212427;
                     background-color: #D9D9D9;

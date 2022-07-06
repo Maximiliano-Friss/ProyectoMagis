@@ -1,7 +1,9 @@
+@import 'fonts';
 header {
 	display: grid;
 	grid-template-columns: repeat(12,1fr);
 	height: 6rem;
+    font-weight: map-get($main_font_weight, subtitulo);
 	
 	.brand_container {
 		display: flex;
@@ -10,7 +12,7 @@ header {
 		grid-column: 2/3;
 
 		img {
-				width: 4rem;
+            width: 4rem;
 		}
 	}
 
@@ -19,15 +21,18 @@ header {
 
 		.navbar_link {
 			text-decoration: none;
+            
 		}
 
 		.navbar_link_special {
 			text-decoration: underline;
-			font-weight: bold;
+            font-size: 1.25rem;
+            font-weight: map-get($main_font_weight, titulo);
 		}
 		
 		.navbar_links_container {
 			display: flex;
+            align-items: baseline;
 			justify-content: space-evenly;
 			width: 100%;
 		}

@@ -1,3 +1,15 @@
 footer {
 	justify-self: flex-end;
+	section {
+		margin: 1rem 0rem;
+		h2 {
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: bold;
+			margin: 1rem 0rem;
+		}
+		p {
+            text-align: center;
+		}
+	}
 }

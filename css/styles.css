@@ -14,7 +14,8 @@ header {
     header .navbar_container .navbar_link {
       text-decoration: none; }
     header .navbar_container .navbar_link_special {
-      text-decoration: underline; }
+      text-decoration: underline;
+      font-weight: bold; }
     header .navbar_container .navbar_links_container {
       display: flex;
       justify-content: space-evenly;
@@ -22,6 +23,15 @@ header {
 
 footer {
   justify-self: flex-end; }
+  footer section {
+    margin: 1rem 0rem; }
+    footer section h2, footer section .h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin: 1rem 0rem; }
+    footer section p {
+      text-align: center; }
 
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)

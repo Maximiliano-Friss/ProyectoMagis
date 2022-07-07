@@ -52,17 +52,10 @@ main {
             h2{
                 text-align: center;
                 font-weight: map-get($main_font_weight, titulo);
-                margin: 2rem 0rem;
+                margin: 2rem 0rem 2rem -3rem;
             }
             p{
-                text-align: right;
-            }
-            .mapa_location_p{
-                &::before{
-                    content: url(../assets/img/mapa_location_icon.png);
-                    width: 1rem;
-                    margin-right: 0.2rem;
-                }
+                text-align: left;
             }
             div{
                 margin: 2rem 0rem;
@@ -71,7 +64,6 @@ main {
                     font-weight: map-get($main_font_weight, titulo);
                     text-transform: uppercase;
                     color: #212427;
-                    background-color: #D9D9D9;
                     margin-right: 2rem;
                 }
             }

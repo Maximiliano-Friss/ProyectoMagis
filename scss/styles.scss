@@ -3,7 +3,7 @@
 @import 'index';
 @import 'fonts';
 
-$body-bg: #F5F5F5;
+$body-bg: #FFFFFF;
 $link-color: #212427;
 $font-family-sans-serif: $main_font;
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
@@ -28,6 +28,7 @@ body {
     .link_ver_mas{
         font-weight: map-get($main_font_weight, ver_mas);
         font-size: 1.25rem;
+        filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
     }
 }
 

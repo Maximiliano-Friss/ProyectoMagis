@@ -78,13 +78,9 @@ main .main_mapa {
   main .main_mapa div h2, main .main_mapa div .h2 {
     text-align: center;
     font-weight: 800;
-    margin: 2rem 0rem; }
+    margin: 2rem 0rem 2rem -3rem; }
   main .main_mapa div p {
-    text-align: right; }
-  main .main_mapa div .mapa_location_p::before {
-    content: url(../assets/img/mapa_location_icon.png);
-    width: 1rem;
-    margin-right: 0.2rem; }
+    text-align: left; }
   main .main_mapa div div {
     margin: 2rem 0rem; }
     main .main_mapa div div .btn-secondary {
@@ -92,7 +88,6 @@ main .main_mapa {
       font-weight: 800;
       text-transform: uppercase;
       color: #212427;
-      background-color: #D9D9D9;
       margin-right: 2rem; }
 
 /*!
@@ -143,7 +138,7 @@ main .main_mapa {
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg-rgb: 245, 245, 245;
+  --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: "Montserrat", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -152,7 +147,7 @@ main .main_mapa {
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #F5F5F5; }
+  --bs-body-bg: #FFFFFF; }
 
 *,
 *::before,
@@ -578,7 +573,7 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #F5F5F5;
+  background-color: #FFFFFF;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -1633,7 +1628,7 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #F5F5F5;
+  background-color: #FFFFFF;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   appearance: none;
@@ -1648,7 +1643,7 @@ progress {
       cursor: pointer; }
   .form-control:focus {
     color: #212529;
-    background-color: #F5F5F5;
+    background-color: #FFFFFF;
     border-color: #86b7fe;
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); }
@@ -1770,7 +1765,7 @@ textarea.form-control-lg {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #F5F5F5;
+  background-color: #FFFFFF;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
@@ -1823,7 +1818,7 @@ textarea.form-control-lg {
   height: 1em;
   margin-top: 0.25em;
   vertical-align: top;
-  background-color: #F5F5F5;
+  background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1898,9 +1893,9 @@ textarea.form-control-lg {
   .form-range:focus {
     outline: 0; }
     .form-range:focus::-webkit-slider-thumb {
-      box-shadow: 0 0 0 1px #F5F5F5, 0 0 0 0.25rem rgba(13, 110, 253, 0.25); }
+      box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 0.25rem rgba(13, 110, 253, 0.25); }
     .form-range:focus::-moz-range-thumb {
-      box-shadow: 0 0 0 1px #F5F5F5, 0 0 0 0.25rem rgba(13, 110, 253, 0.25); }
+      box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 0.25rem rgba(13, 110, 253, 0.25); }
   .form-range::-moz-focus-outer {
     border: 0; }
   .form-range::-webkit-slider-thumb {
@@ -3051,8 +3046,8 @@ textarea.form-control-lg {
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
     color: #495057;
-    background-color: #F5F5F5;
-    border-color: #dee2e6 #dee2e6 #F5F5F5; }
+    background-color: #FFFFFF;
+    border-color: #dee2e6 #dee2e6 #FFFFFF; }
   .nav-tabs .dropdown-menu {
     margin-top: -1px;
     border-top-left-radius: 0;
@@ -3540,9 +3535,6 @@ textarea.form-control-lg {
   margin-bottom: -0.5rem;
   margin-left: -0.5rem;
   border-bottom: 0; }
-  .card-header-tabs .nav-link.active {
-    background-color: #fff;
-    border-bottom-color: #fff; }
 
 .card-header-pills {
   margin-right: -0.5rem;
@@ -3613,7 +3605,7 @@ textarea.form-control-lg {
   font-size: 1rem;
   color: #212529;
   text-align: left;
-  background-color: #F5F5F5;
+  background-color: #FFFFFF;
   border: 0;
   border-radius: 0;
   overflow-anchor: none;
@@ -3653,7 +3645,7 @@ textarea.form-control-lg {
   margin-bottom: 0; }
 
 .accordion-item {
-  background-color: #F5F5F5;
+  background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.125); }
   .accordion-item:first-of-type {
     border-top-left-radius: 0.25rem;
@@ -7924,4 +7916,5 @@ body {
     font-size: 1.5rem; }
   body .link_ver_mas {
     font-weight: 600;
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25)); }

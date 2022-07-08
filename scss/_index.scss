@@ -49,6 +49,10 @@ main {
             }
         }
         div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
             h2{
                 text-align: center;
                 font-weight: map-get($main_font_weight, titulo);
@@ -58,13 +62,35 @@ main {
                 text-align: left;
             }
             div{
-                margin: 2rem 0rem;
-                .btn-secondary {
-                    width: 20%;
-                    font-weight: map-get($main_font_weight, titulo);
-                    text-transform: uppercase;
-                    color: #212427;
-                    margin-right: 2rem;
+                margin-left: 20rem;
+            }
+        }
+    }
+    .main_filosofia {
+        background-color: #F4D245;
+        h2 {
+            margin: 2rem 0rem;
+            text-align: center;
+            font-weight: map-get($main_font_weight, titulo);
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .filosofia_palabras {
+                margin-bottom: 2rem;
+                display: flex;
+                flex-direction: row;
+                h3{
+                    margin: 2rem 2rem 2rem 1rem;
+                    text-transform: capitalize;
+                    font-weight: bold;
+                }
+            }
+            .filosofia_texto {
+                margin-bottom: 3rem;
+                p {
+                    text-align: center;
                 }
             }
         }

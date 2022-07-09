@@ -53,8 +53,6 @@ main .main_conocenos {
     justify-content: center;
     align-items: center; }
     main .main_conocenos div h2, main .main_conocenos div .h2 {
-      text-align: center;
-      font-weight: 800;
       margin: 2rem 0rem; }
     main .main_conocenos div p {
       text-align: center;
@@ -82,8 +80,6 @@ main .main_mapa {
     justify-content: center;
     align-items: start; }
     main .main_mapa div h2, main .main_mapa div .h2 {
-      text-align: center;
-      font-weight: 800;
       margin: 2rem 0rem 2rem -3rem; }
     main .main_mapa div p {
       text-align: left; }
@@ -93,9 +89,7 @@ main .main_mapa {
 main .main_filosofia {
   background-color: #F4D245; }
   main .main_filosofia h2, main .main_filosofia .h2 {
-    margin: 2rem 0rem;
-    text-align: center;
-    font-weight: 800; }
+    margin: 2rem 0rem; }
   main .main_filosofia div {
     display: flex;
     flex-direction: column;
@@ -115,20 +109,17 @@ main .main_filosofia {
 
 main .main_indices {
   margin-bottom: 3rem; }
-  main .main_indices div h2, main .main_indices div .h2 {
-    margin: 2rem 0rem;
-    text-align: center;
-    font-weight: 800; }
-  main .main_indices div div div div .carousel-img {
-    width: 1440px;
-    height: 526px; }
+  main .main_indices h2, main .main_indices .h2 {
+    margin: 2rem 0rem; }
+  main .main_indices .carousel-item-background {
+    background-color: black; }
+    main .main_indices .carousel-item-background img {
+      opacity: 0.6; }
 
 main .main_ejes {
   background-color: #F4D245; }
   main .main_ejes div h2, main .main_ejes div .h2 {
-    margin: 2rem 0rem;
-    text-align: center;
-    font-weight: 800; }
+    margin: 2rem 0rem; }
   main .main_ejes div p {
     text-align: center; }
   main .main_ejes div div {
@@ -4726,13 +4717,17 @@ textarea.form-control-lg {
     display: block;
     clear: both;
     content: ""; }
+  .carousel-inner .carousel-item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    line-height: 1; }
 
 .carousel-item {
   position: relative;
   display: none;
   float: left;
   width: 100%;
-  margin-right: -100%;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
@@ -7972,7 +7967,9 @@ body {
   min-height: 100%; }
   body h2, body .h2 {
     font-size: 3rem;
-    filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25)); }
+    filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+    text-align: center;
+    font-weight: 800; }
   body p {
     font-size: 1.5rem; }
   body .link_ver_mas {

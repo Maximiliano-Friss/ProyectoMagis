@@ -19,8 +19,6 @@ main {
             justify-content: center;
             align-items: center;
             h2{
-                text-align: center;
-                font-weight: map-get($main_font_weight, titulo);
                 margin: 2rem 0rem;
             }
             p{
@@ -54,8 +52,6 @@ main {
             justify-content: center;
             align-items: start;
             h2{
-                text-align: center;
-                font-weight: map-get($main_font_weight, titulo);
                 margin: 2rem 0rem 2rem -3rem;
             }
             p{
@@ -70,8 +66,6 @@ main {
         background-color: #F4D245;
         h2 {
             margin: 2rem 0rem;
-            text-align: center;
-            font-weight: map-get($main_font_weight, titulo);
         }
         div {
             display: flex;
@@ -97,31 +91,21 @@ main {
     }
     .main_indices {
         margin-bottom: 3rem;
-        div {
             h2 {
                 margin: 2rem 0rem;
-                text-align: center;
-                font-weight: map-get($main_font_weight, titulo);
             }
-            div {
-                div {
-                    div{
-                        .carousel-img {
-                            width: 1440px;
-                            height: 526px;
-                        }
-                    }
+            .carousel-item-background{
+                background-color: black;
+                img{
+                    opacity: 0.6;
                 }
             }
-        }
     }
     .main_ejes {
         background-color: #F4D245;
         div {
             h2 {
                 margin: 2rem 0rem;
-                text-align: center;
-                font-weight: map-get($main_font_weight, titulo);
             }
             p {
                 text-align: center;

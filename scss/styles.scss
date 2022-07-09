@@ -21,6 +21,8 @@ body {
     h2 {
         font-size: 3rem;
         filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+        text-align: center;
+        font-weight: map-get($main_font_weight, titulo);
     }
     p{
         font-size: 1.5rem;

@@ -108,13 +108,25 @@ main .main_filosofia {
       padding: 0 12%; }
 
 main .main_indices {
-  margin-bottom: 3rem; }
+  margin: 5.5rem 0 3rem; }
   main .main_indices h2, main .main_indices .h2 {
     margin: 2rem 0rem; }
-  main .main_indices .carousel-item-background {
-    background-color: black; }
-    main .main_indices .carousel-item-background img {
+  main .main_indices .carousel-inner .carousel-item-background {
+    background-color: black;
+    position: relative; }
+    main .main_indices .carousel-inner .carousel-item-background img {
       opacity: 0.6; }
+  main .main_indices .carousel-inner .carousel-caption-container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    main .main_indices .carousel-inner .carousel-caption-container h5, main .main_indices .carousel-inner .carousel-caption-container .h5 {
+      color: #FFFFFF;
+      font-size: 2.5rem;
+      text-align: center;
+      filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25)); }
 
 main .main_ejes {
   background-color: #F4D245; }

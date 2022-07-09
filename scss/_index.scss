@@ -64,28 +64,27 @@ main {
     }
     .main_filosofia {
         background-color: #F4D245;
+        height: 24.5rem;
         h2 {
-            margin: 2rem 0rem;
+            margin: 2rem 0rem 1rem;
         }
         div {
             display: flex;
             flex-direction: column;
             align-items: center;
             .filosofia_palabras {
-                margin-bottom: 2rem;
                 display: flex;
                 flex-direction: row;
                 h3{
+                    font-size: 2.125rem;
                     margin: 2rem 2rem 2rem 1rem;
                     text-transform: capitalize;
-                    font-weight: bold;
+                    font-weight: map-get($main_font_weight, ver_mas);
                 }
             }
             .filosofia_texto {
-                margin-bottom: 3rem;
-                p {
-                    text-align: center;
-                }
+                text-align: center;
+                padding: 0 12%;
             }
         }
     }

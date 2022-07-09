@@ -87,25 +87,25 @@ main .main_mapa {
       margin-left: 20rem; }
 
 main .main_filosofia {
-  background-color: #F4D245; }
+  background-color: #F4D245;
+  height: 24.5rem; }
   main .main_filosofia h2, main .main_filosofia .h2 {
-    margin: 2rem 0rem; }
+    margin: 2rem 0rem 1rem; }
   main .main_filosofia div {
     display: flex;
     flex-direction: column;
     align-items: center; }
     main .main_filosofia div .filosofia_palabras {
-      margin-bottom: 2rem;
       display: flex;
       flex-direction: row; }
       main .main_filosofia div .filosofia_palabras h3, main .main_filosofia div .filosofia_palabras .h3 {
+        font-size: 2.125rem;
         margin: 2rem 2rem 2rem 1rem;
         text-transform: capitalize;
-        font-weight: bold; }
+        font-weight: 600; }
     main .main_filosofia div .filosofia_texto {
-      margin-bottom: 3rem; }
-      main .main_filosofia div .filosofia_texto p {
-        text-align: center; }
+      text-align: center;
+      padding: 0 12%; }
 
 main .main_indices {
   margin-bottom: 3rem; }

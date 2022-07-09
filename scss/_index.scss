@@ -95,5 +95,63 @@ main {
             }
         }
     }
+    .main_indices {
+        margin-bottom: 3rem;
+        div {
+            h2 {
+                margin: 2rem 0rem;
+                text-align: center;
+                font-weight: map-get($main_font_weight, titulo);
+            }
+            div {
+                div {
+                    div{
+                        .carousel-img {
+                            width: 1440px;
+                            height: 526px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main_ejes {
+        background-color: #F4D245;
+        div {
+            h2 {
+                margin: 2rem 0rem;
+                text-align: center;
+                font-weight: map-get($main_font_weight, titulo);
+            }
+            p {
+                text-align: center;
+            }
+            div {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                .eje_educacion {
+                    padding: 8.3rem 2.7rem 0rem 8.3rem;
+                    background-image: url("../assets/img/educacion.png");
+                    background-repeat: no-repeat;
+                    strong {
+                        color: #FFFFFF;
+                        font-weight: bold;
+                        font-size: 2rem;
+                    }
+                }
+                .eje_acompañamiento {
+                    padding:  8.3rem 8.3rem 12.2rem 8.3rem;
+                    background-image: insertar imagen;
+                    strong {
+                        color: #FFFFFF;
+                        font-weight: bold;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+        
+    }
 }
 

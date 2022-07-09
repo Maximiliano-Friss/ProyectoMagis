@@ -2,12 +2,33 @@
 
 main {
     .main_portada{
-        background-image: insertar imagen;
-        div{
+        background-image: url(../assets/img/portada.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30.25rem;
+        position: relative;
+        .portada_h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             h1{
+                color: #FFFFFF;
                 text-align: center;
-                margin: 2rem 0rem;
+                font-size: 3rem;
+                font-weight: map-get($main_font_weight, titulo);
+                filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
             }
+        }
+        &:before {
+            content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: black;
+                opacity: .25; 
         }
     }
     .main_conocenos{
@@ -123,7 +144,7 @@ main {
     .main_ejes {
         .ejes_encabezado{
             font-size: 2.125rem;
-            font-style: map-get($main_font_weight, subtitulo);
+            font-weight: map-get($main_font_weight, subtitulo);
             margin-bottom: 3.1rem;
             text-align: center;
             padding: 0 15%;
@@ -143,6 +164,8 @@ main {
                 .eje_educacion {
                     background-image: url("../assets/img/educacion.png");
                     background-repeat: no-repeat;
+                    border-radius: 12px;
+
                     width: 355px;
                     height: 355px;
                     position: relative;

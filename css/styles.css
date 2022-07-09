@@ -66,25 +66,29 @@ main .main_conocenos {
 
 main .main_mapa {
   background-color: #F5F5F5;
-  height: 40rem; }
+  height: 40rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center; }
   main .main_mapa .main_mapa_img {
-    display: flex;
-    justify-content: flex-end;
     margin-top: 7rem; }
     main .main_mapa .main_mapa_img img {
       height: 530px;
-      width: 646px; }
+      width: 646px;
+      align-self: flex-end; }
   main .main_mapa div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start; }
     main .main_mapa div h2, main .main_mapa div .h2 {
-      margin: 2rem 0rem 2rem -3rem; }
+      margin-top: -4rem;
+      margin-bottom: 2rem; }
     main .main_mapa div p {
-      text-align: left; }
+      text-align: left;
+      margin-left: 4rem; }
     main .main_mapa div div {
-      margin-left: 20rem; }
+      margin: -1rem 0 0 22rem; }
 
 main .main_filosofia {
   background-color: #F4D245;

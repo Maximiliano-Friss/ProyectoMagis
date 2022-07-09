@@ -37,13 +37,15 @@ main {
     .main_mapa{
         background-color: #F5F5F5;
         height: 40rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
         .main_mapa_img{
-            display: flex;
-            justify-content: flex-end;
             margin-top: 7rem;
             img{
                 height: 530px;
                 width: 646px;
+                align-self: flex-end;
             }
         }
         div{
@@ -52,13 +54,15 @@ main {
             justify-content: center;
             align-items: start;
             h2{
-                margin: 2rem 0rem 2rem -3rem;
+                margin-top: -4rem;
+                margin-bottom: 2rem;
             }
             p{
                 text-align: left;
+                margin-left: 4rem;
             }
             div{
-                margin-left: 20rem;
+                margin: -1rem 0 0 22rem;
             }
         }
     }

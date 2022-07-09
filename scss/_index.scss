@@ -89,7 +89,7 @@ main {
         }
     }
     .main_indices {
-        margin: 5.5rem 0 3rem;
+        margin: 5.5rem -2rem 3rem;
         h2 {
             margin: 2rem 0rem;
         }
@@ -117,8 +117,15 @@ main {
         }
     }
     .main_ejes {
-        background-color: #F4D245;
+        .ejes_encabezado{
+            font-size: 2.125rem;
+            font-style: map-get($main_font_weight, subtitulo);
+            margin-bottom: 3.1rem;
+            text-align: center;
+            padding: 0 15%;
+        }
         div {
+            background-color: #F4D245;
             h2 {
                 margin: 2rem 0rem;
             }

@@ -6,6 +6,12 @@
 $body-bg: #FFFFFF;
 $link-color: #212427;
 $font-family-sans-serif: $main_font;
+$carousel-control-prev-icon-bg: url('../assets/img/carousel-left.svg');
+$carousel-control-next-icon-bg: url('../assets/img/carousel-right.svg');
+$carousel-control-width: 7%;
+$carousel-control-icon-width: 6rem;
+$carousel-control-opacity: 1;
+$carousel-control-hover-opacity: 0.7;
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 * {

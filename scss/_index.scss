@@ -126,38 +126,53 @@ main {
         }
         div {
             background-color: #F4D245;
+            height: 35rem;
             h2 {
-                margin: 2rem 0rem;
+                margin: 2rem 0 3.1rem;
             }
-            p {
-                text-align: center;
-            }
-            div {
-                display: flex;
-                flex-direction: row;
+            .ejes_imagenes{
+                display: flex; 
+                flex-flow: row nowrap;
                 justify-content: space-evenly;
+                align-items: center;
+                height: fit-content;
                 .eje_educacion {
-                    padding: 8.3rem 2.7rem 0rem 8.3rem;
                     background-image: url("../assets/img/educacion.png");
                     background-repeat: no-repeat;
-                    strong {
-                        color: #FFFFFF;
-                        font-weight: bold;
-                        font-size: 2rem;
+                    width: 355px;
+                    height: 355px;
+                    position: relative;
+                    filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+                    &:before {
+                        content: '';
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            background: black;
+                            opacity: .25; 
+                            border-radius: 12px;
                     }
                 }
                 .eje_acompañamiento {
-                    padding:  8.3rem 8.3rem 12.2rem 8.3rem;
-                    background-image: insertar imagen;
-                    strong {
-                        color: #FFFFFF;
-                        font-weight: bold;
-                        font-size: 2rem;
-                    }
+                    @extend .eje_educacion;
+                    background-image: url("../assets/img/familia.png");
+                }
+                .eje_p {
+                    color: #FFFFFF;
+                    font-weight: bold;
+                    font-size: 2rem;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
                 }
             }
         }
-        
     }
 }
+
 

@@ -136,30 +136,45 @@ main .main_ejes .ejes_encabezado {
   padding: 0 15%; }
 
 main .main_ejes div {
-  background-color: #F4D245; }
+  background-color: #F4D245;
+  height: 35rem; }
   main .main_ejes div h2, main .main_ejes div .h2 {
-    margin: 2rem 0rem; }
-  main .main_ejes div p {
-    text-align: center; }
-  main .main_ejes div div {
+    margin: 2rem 0 3.1rem; }
+  main .main_ejes div .ejes_imagenes {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; }
-    main .main_ejes div div .eje_educacion {
-      padding: 8.3rem 2.7rem 0rem 8.3rem;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: fit-content; }
+    main .main_ejes div .ejes_imagenes .eje_educacion, main .main_ejes div .ejes_imagenes .eje_acompañamiento {
       background-image: url("../assets/img/educacion.png");
-      background-repeat: no-repeat; }
-      main .main_ejes div div .eje_educacion strong {
-        color: #FFFFFF;
-        font-weight: bold;
-        font-size: 2rem; }
-    main .main_ejes div div .eje_acompañamiento {
-      padding: 8.3rem 8.3rem 12.2rem 8.3rem;
-      background-image: insertar imagen; }
-      main .main_ejes div div .eje_acompañamiento strong {
-        color: #FFFFFF;
-        font-weight: bold;
-        font-size: 2rem; }
+      background-repeat: no-repeat;
+      width: 355px;
+      height: 355px;
+      position: relative;
+      filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25)); }
+      main .main_ejes div .ejes_imagenes .eje_educacion:before, main .main_ejes div .ejes_imagenes .eje_acompañamiento:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: black;
+        opacity: .25;
+        border-radius: 12px; }
+    main .main_ejes div .ejes_imagenes .eje_acompañamiento {
+      background-image: url("../assets/img/familia.png"); }
+    main .main_ejes div .ejes_imagenes .eje_p {
+      color: #FFFFFF;
+      font-weight: bold;
+      font-size: 2rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25)); }
 
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)

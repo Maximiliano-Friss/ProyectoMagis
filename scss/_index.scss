@@ -44,7 +44,7 @@ main {
             }
             p{
                 text-align: center;
-                margin: 2rem 0rem;
+                margin: 1rem 0rem;
                 padding: 0 10%;
                 a {
                     text-decoration: underline;
@@ -165,7 +165,6 @@ main {
                     background-image: url("../assets/img/educacion.png");
                     background-repeat: no-repeat;
                     border-radius: 12px;
-
                     width: 355px;
                     height: 355px;
                     position: relative;
@@ -200,6 +199,19 @@ main {
             }
         }
     }
+    .main_objetivos {
+        div {
+            p {
+                text-align: center;
+                margin: 2rem 0rem;
+                font-size: 3rem;
+            }
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                margin: 2rem 0rem 4rem 0rem;
+            }
+        }
+    }
 }
-
-

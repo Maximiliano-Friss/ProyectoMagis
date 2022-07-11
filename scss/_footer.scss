@@ -4,12 +4,27 @@ footer {
 		margin: 1rem 0rem;
 		h2 {
 			text-align: center;
-			text-transform: uppercase;
+			text-transform: capitalize;
 			font-weight: bold;
-			margin: 1rem 0rem;
+			margin: 2rem 0rem;
 		}
 		p {
             text-align: center;
+			margin: 1rem 0rem;
 		}
+	}
+	.redes {
+		div {
+            div {
+				display: flex;
+				align-items: center;
+				justify-content: space-evenly;
+				margin: 2rem 0rem;
+			}
+		}
+	}
+	.logo {
+		display: flex;
+		justify-content: center;
 	}
 }

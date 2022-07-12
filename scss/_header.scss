@@ -25,9 +25,13 @@ header {
 		}
 
 		.navbar_link_special {
-			text-decoration: underline;
+            text-decoration: none;
             font-size: 1.25rem;
             font-weight: map-get($main_font_weight, titulo);
+            background-color: #F4D245;
+            border-radius: 500px;
+            padding: 0.5rem 2rem;
+            filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
 		}
 		
 		.navbar_links_container {

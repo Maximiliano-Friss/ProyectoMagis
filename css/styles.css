@@ -16,9 +16,13 @@ header {
     header .navbar_container .navbar_link {
       text-decoration: none; }
     header .navbar_container .navbar_link_special {
-      text-decoration: underline;
+      text-decoration: none;
       font-size: 1.25rem;
-      font-weight: 800; }
+      font-weight: 800;
+      background-color: #F4D245;
+      border-radius: 500px;
+      padding: 0.5rem 2rem;
+      filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25)); }
     header .navbar_container .navbar_links_container {
       display: flex;
       align-items: baseline;
@@ -4797,13 +4801,17 @@ textarea.form-control-lg {
     display: block;
     clear: both;
     content: ""; }
+  .carousel-inner .carousel-item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    line-height: 1; }
 
 .carousel-item {
   position: relative;
   display: none;
   float: left;
   width: 100%;
-  margin-right: -100%;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {

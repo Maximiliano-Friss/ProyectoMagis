@@ -36,7 +36,6 @@ footer {
     footer section h2, footer section .h2 {
       text-align: center;
       text-transform: capitalize;
-      font-weight: bold;
       margin: 2rem 0rem; }
     footer section p {
       text-align: center;
@@ -218,13 +217,16 @@ main .main_ejes div {
 main .main_objetivos div p {
   text-align: center;
   margin: 2rem 0rem;
-  font-size: 3rem; }
+  font-size: 2.8rem;
+  font-weight: 300; }
+  main .main_objetivos div p span {
+    font-weight: 500; }
 
 main .main_objetivos div div {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin: 2rem 0rem 4rem 0rem; }
+  justify-content: space-evenly;
+  margin: 2rem 6.25rem 4rem; }
 
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)

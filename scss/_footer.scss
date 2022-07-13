@@ -10,6 +10,11 @@ footer {
 		p {
             text-align: center;
 			margin: 1rem 0rem;
+            font-weight: map-get($main_font_weight, Medium-500);
+            font-size: 2.125rem;
+            span{
+                font-weight: map-get($main_font_weight, SemiBold-600);
+            }
 		}
 	}
 	.redes {
@@ -22,8 +27,12 @@ footer {
 			}
 		}
 	}
+    .footer-seguinos{
+        font-weight: map-get($main_font_weight, SemiBold-600);
+    }
 	.logo {
 		display: flex;
 		justify-content: center;
+        margin-bottom: 8.6rem;
 	}
 }

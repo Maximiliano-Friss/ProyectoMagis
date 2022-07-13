@@ -4,6 +4,8 @@ header {
   grid-template-columns: repeat(12, 1fr);
   height: 6rem;
   font-weight: 500; }
+  header h1, header .h1 {
+    filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25)); }
   header .brand_container {
     display: flex;
     justify-content: center;
@@ -39,15 +41,22 @@ footer {
       margin: 2rem 0rem; }
     footer section p {
       text-align: center;
-      margin: 1rem 0rem; }
+      margin: 1rem 0rem;
+      font-weight: 500;
+      font-size: 2.125rem; }
+      footer section p span {
+        font-weight: 600; }
   footer .redes div div {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin: 2rem 0rem; }
+  footer .footer-seguinos {
+    font-weight: 600; }
   footer .logo {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 8.6rem; }
 
 /*Estilos del index*/
 main .main_portada {

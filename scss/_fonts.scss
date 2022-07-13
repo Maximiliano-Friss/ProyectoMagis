@@ -1,9 +1,17 @@
 $main_font: 'Montserrat', sans-serif;
 
 $main_font_weight: (
-    titulo: 800,
-    ver_mas: 600,
-    subtitulo: 500,
-    cuerpo: 400,
-    detalle: 300
+    ExtraBold-800: 800,
+    SemiBold-600: 600,
+    Medium-500: 500,
+    Regular-400: 400,
+    Light-300: 300
 );
+
+// $main_font_weight: (
+//     titulo: 800,
+//     ver_mas: 600,
+//     subtitulo: 500,
+//     cuerpo: 400,
+//     detalle: 300
+// );

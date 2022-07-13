@@ -3,8 +3,10 @@ header {
 	display: grid;
 	grid-template-columns: repeat(12,1fr);
 	height: 6rem;
-    font-weight: map-get($main_font_weight, subtitulo);
-	
+    font-weight: map-get($main_font_weight, Medium-500);
+	h1{
+        filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+    }
 	.brand_container {
 		display: flex;
 		justify-content: center;
@@ -27,7 +29,7 @@ header {
 		.navbar_link_special {
             text-decoration: none;
             font-size: 1.25rem;
-            font-weight: map-get($main_font_weight, titulo);
+            font-weight: map-get($main_font_weight, ExtraBold-800);
             background-color: #F4D245;
             border-radius: 500px;
             padding: 0.5rem 2rem;

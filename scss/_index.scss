@@ -16,7 +16,7 @@ main {
                 color: #FFFFFF;
                 text-align: center;
                 font-size: 3rem;
-                font-weight: map-get($main_font_weight, titulo);
+                font-weight: map-get($main_font_weight, ExtraBold-800);
                 filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
             }
         }
@@ -49,7 +49,7 @@ main {
                 a {
                     text-decoration: underline;
                     font-size: 1.5rem;
-                    font-weight: map-get($main_font_weight, titulo);
+                    font-weight: map-get($main_font_weight, ExtraBold-800);
                     filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
                 }
             }
@@ -104,7 +104,7 @@ main {
                     font-size: 2.125rem;
                     margin: 2rem 2rem 2rem 1rem;
                     text-transform: capitalize;
-                    font-weight: map-get($main_font_weight, ver_mas);
+                    font-weight: map-get($main_font_weight, SemiBold-600);
                 }
             }
             .filosofia_texto {
@@ -144,7 +144,7 @@ main {
     .main_ejes {
         .ejes_encabezado{
             font-size: 2.125rem;
-            font-weight: map-get($main_font_weight, subtitulo);
+            font-weight: map-get($main_font_weight, Medium-500);
             margin-bottom: 3.1rem;
             text-align: center;
             padding: 0 15%;
@@ -205,9 +205,9 @@ main {
                 text-align: center;
                 margin: 2rem 0rem;
                 font-size: 2.8rem;
-                font-weight: map-get($main_font_weight , detalle);
+                font-weight: map-get($main_font_weight , Light-300);
                 span{
-                    font-weight: map-get($main_font_weight , subtitulo);
+                    font-weight: map-get($main_font_weight , Medium-500);
                 }
             }
             div {

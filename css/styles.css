@@ -58,6 +58,15 @@ footer {
     justify-content: center;
     margin-bottom: 8.6rem; }
 
+.footer_background {
+  background-color: #F4D245; }
+  .footer_background section div div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2rem 0rem; }
+
 /*Estilos del index*/
 main .main_portada {
   background-image: url(../assets/img/portada.png);
@@ -236,6 +245,8 @@ main .main_objetivos div div {
   align-items: center;
   justify-content: space-evenly;
   margin: 2rem 6.25rem 4rem; }
+  main .main_objetivos div div img {
+    padding: 0.5rem; }
 
 .carousel-inner > .item.prev.right > div:nth-child(2),
 .carousel-inner > .item.prev.right > div:nth-child(3) {
@@ -4820,17 +4831,13 @@ textarea.form-control-lg {
     display: block;
     clear: both;
     content: ""; }
-  .carousel-inner .carousel-item img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    line-height: 1; }
 
 .carousel-item {
   position: relative;
   display: none;
   float: left;
   width: 100%;
+  margin-right: -100%;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {

@@ -14,7 +14,8 @@ header {
     header .brand_container img {
       width: 4rem; }
   header .navbar_container {
-    grid-column: 3/-1; }
+    grid-column: 1/-1;
+    margin-left: -8%; }
     header .navbar_container .navbar_link {
       text-decoration: none; }
     header .navbar_container .navbar_link_special {
@@ -79,12 +80,15 @@ main .main_portada {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-    main .main_portada .portada_h1 h1, main .main_portada .portada_h1 .h1 {
+    main .main_portada .portada_h1 .portada_h1_titulo, main .main_portada .portada_h1 h2, main .main_portada .portada_h1 .h2 {
       color: #FFFFFF;
       text-align: center;
       font-size: 3rem;
       font-weight: 800;
+      width: 52rem;
       filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25)); }
+    main .main_portada .portada_h1 h2, main .main_portada .portada_h1 .h2 {
+      margin-top: 1rem; }
   main .main_portada:before {
     content: '';
     position: absolute;
@@ -103,17 +107,18 @@ main .main_conocenos {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center; }
-    main .main_conocenos div h2, main .main_conocenos div .h2 {
-      margin: 2rem 0rem; }
-    main .main_conocenos div p {
+    main .main_conocenos div .conocenos_p1, main .main_conocenos div .conocenos_p2 {
       text-align: center;
       margin: 1rem 0rem;
-      padding: 0 10%; }
-      main .main_conocenos div p a {
+      width: 68rem; }
+    main .main_conocenos div .conocenos_p2 {
+      width: 72rem; }
+      main .main_conocenos div .conocenos_p2 a {
         text-decoration: underline;
-        font-size: 1.5rem;
-        font-weight: 800;
-        filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25)); }
+        font-size: 1.25rem;
+        font-weight: 600;
+        filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+        margin-left: 0.8rem; }
 
 main .main_mapa {
   background-color: #FFFFFF;
@@ -132,20 +137,19 @@ main .main_mapa {
       margin-top: -4rem;
       margin-bottom: 2rem; }
     main .main_mapa div p {
-      text-align: left;
-      margin-left: 4rem; }
-    main .main_mapa div div {
-      margin: -1rem 0 0 22rem; }
+      text-align: center;
+      margin-left: 2rem; }
 
 main .main_filosofia {
   background-color: #F4D245;
   height: 24.5rem; }
   main .main_filosofia h2, main .main_filosofia .h2 {
-    margin: 2rem 0rem 1rem; }
+    margin-top: 5rem; }
   main .main_filosofia div {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin-top: -1rem; }
     main .main_filosofia div .filosofia_palabras {
       display: flex;
       flex-direction: row; }
@@ -156,7 +160,7 @@ main .main_filosofia {
         font-weight: 600; }
     main .main_filosofia div .filosofia_texto {
       text-align: center;
-      padding: 0 12%; }
+      width: 77rem; }
 
 main .main_indices {
   margin: 5.5rem -2rem 3rem; }
@@ -180,24 +184,31 @@ main .main_indices {
       filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25)); }
 
 main .main_ejes .ejes_encabezado {
-  font-size: 2.125rem;
-  font-weight: 500;
-  margin-bottom: 3.1rem;
-  text-align: center;
-  padding: 0 15%; }
+  height: 13.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  main .main_ejes .ejes_encabezado .ejes_encabezado_p {
+    font-size: 2.125rem;
+    font-weight: 500;
+    margin-bottom: 3.1rem;
+    text-align: center;
+    width: 72.5rem; }
 
-main .main_ejes div {
+main .main_ejes .ejes_inferior {
   background-color: #F4D245;
   height: 35rem; }
-  main .main_ejes div h2, main .main_ejes div .h2 {
+  main .main_ejes .ejes_inferior h2, main .main_ejes .ejes_inferior .h2 {
     margin: 2rem 0 3.1rem; }
-  main .main_ejes div .ejes_imagenes {
+  main .main_ejes .ejes_inferior .ejes_imagenes {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    height: fit-content; }
-    main .main_ejes div .ejes_imagenes .eje_educacion, main .main_ejes div .ejes_imagenes .eje_acompañamiento {
+    height: fit-content;
+    width: 58rem;
+    margin: 0 auto; }
+    main .main_ejes .ejes_inferior .ejes_imagenes .eje_educacion, main .main_ejes .ejes_inferior .ejes_imagenes .eje_acompañamiento {
       background-image: url("../assets/img/educacion.png");
       background-repeat: no-repeat;
       border-radius: 12px;
@@ -205,7 +216,7 @@ main .main_ejes div {
       height: 355px;
       position: relative;
       filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25)); }
-      main .main_ejes div .ejes_imagenes .eje_educacion:before, main .main_ejes div .ejes_imagenes .eje_acompañamiento:before {
+      main .main_ejes .ejes_inferior .ejes_imagenes .eje_educacion:before, main .main_ejes .ejes_inferior .ejes_imagenes .eje_acompañamiento:before {
         content: '';
         position: absolute;
         top: 0;
@@ -215,9 +226,9 @@ main .main_ejes div {
         background: black;
         opacity: .25;
         border-radius: 12px; }
-    main .main_ejes div .ejes_imagenes .eje_acompañamiento {
+    main .main_ejes .ejes_inferior .ejes_imagenes .eje_acompañamiento {
       background-image: url("../assets/img/familia.png"); }
-    main .main_ejes div .ejes_imagenes .eje_p {
+    main .main_ejes .ejes_inferior .ejes_imagenes .eje_p {
       color: #FFFFFF;
       font-weight: bold;
       font-size: 2rem;

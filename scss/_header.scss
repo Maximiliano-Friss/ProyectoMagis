@@ -19,11 +19,11 @@ header {
 	}
 
 	.navbar_container {
-		grid-column: 3/-1;
+		grid-column: 1/-1;
+        margin-left: -8%;
 
 		.navbar_link {
 			text-decoration: none;
-            
 		}
 
 		.navbar_link_special {

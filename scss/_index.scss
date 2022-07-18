@@ -12,12 +12,17 @@ main {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            h1{
+            .portada_h1_titulo{
                 color: #FFFFFF;
                 text-align: center;
                 font-size: 3rem;
                 font-weight: map-get($main_font_weight, ExtraBold-800);
+                width: 52rem;
                 filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+            }
+            h2{
+                @extend .portada_h1_titulo;
+                margin-top: 1rem;
             }
         }
         &:before {
@@ -39,18 +44,20 @@ main {
             flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
-            h2{
-                margin: 2rem 0rem;
-            }
-            p{
+            .conocenos_p1{
                 text-align: center;
                 margin: 1rem 0rem;
-                padding: 0 10%;
+                width: 68rem;
+            }
+            .conocenos_p2{
+                @extend .conocenos_p1;
+                width: 72rem;
                 a {
                     text-decoration: underline;
-                    font-size: 1.5rem;
-                    font-weight: map-get($main_font_weight, ExtraBold-800);
+                    font-size: 1.25rem;
+                    font-weight: map-get($main_font_weight, SemiBold-600);
                     filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+                    margin-left: 0.8rem;
                 }
             }
         }
@@ -76,11 +83,8 @@ main {
                 margin-bottom: 2rem;
             }
             p{
-                text-align: left;
-                margin-left: 4rem;
-            }
-            div{
-                margin: -1rem 0 0 22rem;
+                text-align: center;
+                margin-left: 2rem;
             }
         }
     }
@@ -88,12 +92,13 @@ main {
         background-color: #F4D245;
         height: 24.5rem;
         h2 {
-            margin: 2rem 0rem 1rem;
+            margin-top: 5rem;
         }
         div {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-top: -1rem;
             .filosofia_palabras {
                 display: flex;
                 flex-direction: row;
@@ -106,7 +111,7 @@ main {
             }
             .filosofia_texto {
                 text-align: center;
-                padding: 0 12%;
+                width: 77rem;
             }
         }
     }
@@ -140,13 +145,19 @@ main {
     }
     .main_ejes {
         .ejes_encabezado{
-            font-size: 2.125rem;
-            font-weight: map-get($main_font_weight, Medium-500);
-            margin-bottom: 3.1rem;
-            text-align: center;
-            padding: 0 15%;
+            height: 13.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .ejes_encabezado_p{
+                font-size: 2.125rem;
+                font-weight: map-get($main_font_weight, Medium-500);
+                margin-bottom: 3.1rem;
+                text-align: center;
+                width: 72.5rem;
+            }
         }
-        div {
+        .ejes_inferior {
             background-color: #F4D245;
             height: 35rem;
             h2 {
@@ -155,9 +166,11 @@ main {
             .ejes_imagenes{
                 display: flex; 
                 flex-flow: row nowrap;
-                justify-content: space-evenly;
+                justify-content: space-between;
                 align-items: center;
                 height: fit-content;
+                width: 58rem;
+                margin: 0 auto;
                 .eje_educacion {
                     background-image: url("../assets/img/educacion.png");
                     background-repeat: no-repeat;

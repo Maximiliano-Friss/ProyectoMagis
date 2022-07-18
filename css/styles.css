@@ -127,7 +127,7 @@ main .main_mapa {
   flex-flow: row nowrap;
   justify-content: center; }
   main .main_mapa .main_mapa_img img {
-    margin-left: 5.3rem; }
+    align-self: flex-end; }
   main .main_mapa div {
     display: flex;
     flex-direction: column;

@@ -407,6 +407,62 @@ main {
 footer {
   margin-top: 2.5rem; }
 
+/*Seccion Conocenos*/
+main {
+  min-height: 80vh; }
+
+.barra_footer_redes {
+  margin-left: 5rem; }
+
+.nosotros .nosotros_titulo {
+  font-weight: 500;
+  font-size: 2.125rem;
+  width: 72rem;
+  margin: 2.3rem auto 1.8rem;
+  text-align: center;
+  padding: 0 4%; }
+  .nosotros .nosotros_titulo span {
+    font-weight: 600; }
+
+.nosotros .nosotros_card {
+  width: 75.25rem;
+  height: 26.625rem;
+  margin: 0 auto 2.4rem;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  box-shadow: 14px 20px 10px -15px rgba(0, 0, 0, 0.25), -14px 20px 10px -15px rgba(0, 0, 0, 0.25); }
+  .nosotros .nosotros_card .nosotros_subcontainer, .nosotros .nosotros_card .nosotros_subcontainer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 342px; }
+    .nosotros .nosotros_card .nosotros_subcontainer #nosotros_img_1, .nosotros .nosotros_card .nosotros_subcontainer2 #nosotros_img_1 {
+      background-repeat: no-repeat;
+      border-radius: 12px;
+      width: 570px;
+      height: 342px;
+      background-image: url(../assets/img/nosotros1.png); }
+    .nosotros .nosotros_card .nosotros_subcontainer #nosotros_img_2, .nosotros .nosotros_card .nosotros_subcontainer2 #nosotros_img_2 {
+      background-repeat: no-repeat;
+      border-radius: 12px;
+      width: 570px;
+      height: 342px;
+      background-image: url(../assets/img/nosotros2.png); }
+  .nosotros .nosotros_card .nosotros_subcontainer2 {
+    justify-content: center;
+    text-align: left; }
+    .nosotros .nosotros_card .nosotros_subcontainer2 h3, .nosotros .nosotros_card .nosotros_subcontainer2 .h3 {
+      font-size: 2.125rem;
+      font-weight: 800;
+      margin-bottom: 2.2rem; }
+    .nosotros .nosotros_card .nosotros_subcontainer2 p {
+      padding: 0 4%;
+      font-weight: 400; }
+
+footer {
+  margin-top: 2.5rem; }
+
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

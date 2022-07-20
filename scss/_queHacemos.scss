@@ -23,6 +23,9 @@ main{
         align-items: baseline;
         height: fit-content;
         margin: 0 auto;
+        span{
+            font-weight: map-get($main_font_weight, SemiBold-600);
+        }
         .queHacemos_ejes_educacion_img {
             background-image: url("../assets/img/educacion2.png");
             background-repeat: no-repeat;
@@ -76,6 +79,7 @@ main{
     width: 72rem;
     margin: 2.3rem auto 1.8rem;
     text-align: center;
+    padding: 0 4%;
         span{
             font-weight: map-get($main_font_weight, SemiBold-600);
         }
@@ -95,7 +99,7 @@ main{
             justify-content: center;
             height: 318px;
             
-            @for $i from 1 to 9 {
+            @for $i from 1 to 10 {
                 #actividades_img_#{$i}{
                     background-repeat: no-repeat;
                     border-radius: 12px;
@@ -115,9 +119,13 @@ main{
                 margin-bottom: 2.2rem;
             }
             p{
-                padding: 0 5%;
+                padding: 0 4%;
                 font-weight: map-get($main_font_weight, Regular-400);
             }
         }
     }
+}
+
+footer{
+    margin-top: 2.5rem;
 }

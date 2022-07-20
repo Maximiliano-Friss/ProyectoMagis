@@ -276,6 +276,8 @@ main {
     align-items: baseline;
     height: fit-content;
     margin: 0 auto; }
+    .queHacemos_ejes_container .queHacemos_ejes span {
+      font-weight: 600; }
     .queHacemos_ejes_container .queHacemos_ejes .queHacemos_ejes_educacion_img, .queHacemos_ejes_container .queHacemos_ejes .queHacemos_ejes_acompañamiento_img {
       background-image: url("../assets/img/educacion2.png");
       background-repeat: no-repeat;
@@ -319,7 +321,8 @@ main {
   font-size: 2.125rem;
   width: 72rem;
   margin: 2.3rem auto 1.8rem;
-  text-align: center; }
+  text-align: center;
+  padding: 0 4%; }
   .actividades .actividades_titulo span {
     font-weight: 600; }
 
@@ -384,6 +387,12 @@ main {
       width: 566px;
       height: 318px;
       background-image: url(../assets/img/practica8.png); }
+    .actividades .actividades_card .actividades_subcontainer #actividades_img_9, .actividades .actividades_card .actividades_subcontainer2 #actividades_img_9 {
+      background-repeat: no-repeat;
+      border-radius: 12px;
+      width: 566px;
+      height: 318px;
+      background-image: url(../assets/img/practica9.png); }
   .actividades .actividades_card .actividades_subcontainer2 {
     justify-content: flex-start;
     text-align: center; }
@@ -392,8 +401,11 @@ main {
       font-weight: 800;
       margin-bottom: 2.2rem; }
     .actividades .actividades_card .actividades_subcontainer2 p {
-      padding: 0 5%;
+      padding: 0 4%;
       font-weight: 400; }
+
+footer {
+  margin-top: 2.5rem; }
 
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)

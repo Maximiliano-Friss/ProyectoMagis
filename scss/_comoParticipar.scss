@@ -1,0 +1,33 @@
+main {
+    .main_pregunta {
+        background-color: #F4D245;
+        div {
+            h1 {
+                font-size: 3rem;
+                filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+                text-align: center;
+                font-weight: map-get($main_font_weight, ExtraBold-800);
+                padding: 1rem;
+            }
+        }
+    }
+    .main_invitacion {
+        div {
+            p {
+                text-align: center;
+                margin: 2rem;
+            }
+        }
+    }
+    .main_ayuda {
+        div {
+            h2 {
+                font-size: 2rem;
+                margin: 1rem 0rem;
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
+}

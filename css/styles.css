@@ -60,7 +60,8 @@ footer {
     margin-bottom: 8.6rem; }
 
 .footer_background {
-  background-color: #F4D245; }
+  background-color: #F4D245;
+  padding: 2.5rem; }
   .footer_background section div div {
     display: flex;
     justify-content: flex-start;

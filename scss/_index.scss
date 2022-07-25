@@ -17,7 +17,7 @@ main {
                 text-align: center;
                 font-size: 3rem;
                 font-weight: map-get($main_font_weight, ExtraBold-800);
-                width: 52rem;
+                padding: 0 5%;
                 filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
             }
             h2{
@@ -44,14 +44,10 @@ main {
             flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
-            .conocenos_p1{
+            .conocenos_p{
                 text-align: center;
                 margin: 1rem 0rem;
-                width: 68rem;
-            }
-            .conocenos_p2{
-                @extend .conocenos_p1;
-                width: 72rem;
+                padding: 0 5%;
                 a {
                     text-decoration: underline;
                     font-size: 1.25rem;
@@ -92,7 +88,7 @@ main {
         background-color: #F4D245;
         height: 24.5rem;
         h2 {
-            margin-top: 5rem;
+            margin-top: auto;
         }
         div {
             display: flex;
@@ -111,7 +107,7 @@ main {
             }
             .filosofia_texto {
                 text-align: center;
-                width: 77rem;
+                padding: 0 5%;
             }
         }
     }
@@ -154,7 +150,7 @@ main {
                 font-weight: map-get($main_font_weight, Medium-500);
                 margin-bottom: 3.1rem;
                 text-align: center;
-                width: 72.5rem;
+                padding: 0 5%;
             }
         }
         .ejes_inferior {
@@ -166,10 +162,10 @@ main {
             .ejes_imagenes{
                 display: flex; 
                 flex-flow: row nowrap;
-                justify-content: space-between;
+                justify-content: space-around;
                 align-items: center;
                 height: fit-content;
-                width: 58rem;
+                padding: 0 5%;
                 margin: 0 auto;
                 .eje_educacion {
                     background-image: url("../assets/img/educacion.png");

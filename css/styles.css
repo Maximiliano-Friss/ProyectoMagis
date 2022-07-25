@@ -86,7 +86,7 @@ main .main_portada {
       text-align: center;
       font-size: 3rem;
       font-weight: 800;
-      width: 52rem;
+      padding: 0 5%;
       filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25)); }
     main .main_portada .portada_h1 h2, main .main_portada .portada_h1 .h2 {
       margin-top: 1rem; }
@@ -108,13 +108,11 @@ main .main_conocenos {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center; }
-    main .main_conocenos div .conocenos_p1, main .main_conocenos div .conocenos_p2 {
+    main .main_conocenos div .conocenos_p {
       text-align: center;
       margin: 1rem 0rem;
-      width: 68rem; }
-    main .main_conocenos div .conocenos_p2 {
-      width: 72rem; }
-      main .main_conocenos div .conocenos_p2 a {
+      padding: 0 5%; }
+      main .main_conocenos div .conocenos_p a {
         text-decoration: underline;
         font-size: 1.25rem;
         font-weight: 600;
@@ -145,7 +143,7 @@ main .main_filosofia {
   background-color: #F4D245;
   height: 24.5rem; }
   main .main_filosofia h2, main .main_filosofia .h2 {
-    margin-top: 5rem; }
+    margin-top: auto; }
   main .main_filosofia div {
     display: flex;
     flex-direction: column;
@@ -161,7 +159,7 @@ main .main_filosofia {
         font-weight: 600; }
     main .main_filosofia div .filosofia_texto {
       text-align: center;
-      width: 77rem; }
+      padding: 0 5%; }
 
 main .main_indices {
   margin: 5.5rem -2rem 3rem; }
@@ -194,7 +192,7 @@ main .main_ejes .ejes_encabezado {
     font-weight: 500;
     margin-bottom: 3.1rem;
     text-align: center;
-    width: 72.5rem; }
+    padding: 0 5%; }
 
 main .main_ejes .ejes_inferior {
   background-color: #F4D245;
@@ -204,10 +202,10 @@ main .main_ejes .ejes_inferior {
   main .main_ejes .ejes_inferior .ejes_imagenes {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: fit-content;
-    width: 58rem;
+    padding: 0 5%;
     margin: 0 auto; }
     main .main_ejes .ejes_inferior .ejes_imagenes .eje_educacion, main .main_ejes .ejes_inferior .ejes_imagenes .eje_acompañamiento {
       background-image: url("../assets/img/educacion.png");

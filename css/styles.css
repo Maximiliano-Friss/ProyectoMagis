@@ -517,12 +517,14 @@ main .main_participaciones .participaciones_card {
       font-weight: 400; }
 
 main .main_ayuda div h2, main .main_ayuda div .h2 {
-  font-size: 2rem;
-  margin: 1rem 0rem; }
+  font-size: 2.125rem;
+  margin: 1rem 0rem;
+  filter: none; }
 
 main .main_ayuda div p {
   text-align: center;
-  font-size: 1.5rem; }
+  font-size: 1.8rem;
+  font-weight: 500; }
 
 main .main_ayuda div .contacto {
   font-size: 1.8rem; }
@@ -531,7 +533,11 @@ main .main_ayuda div div div {
   margin: 1.5rem 0rem 1.5rem 2rem; }
 
 main .main_ayuda .link_formulario {
-  margin: 1rem 0rem; }
+  margin: 1rem 0rem;
+  display: flex;
+  justify-content: center; }
+  main .main_ayuda .link_formulario .contacto {
+    text-align: left; }
 
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)

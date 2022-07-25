@@ -60,12 +60,14 @@ main {
     .main_ayuda {
         div {
             h2 {
-                font-size: 2rem;
+                font-size: 2.125rem;
                 margin: 1rem 0rem;
+                filter: none;
             }
             p {
                 text-align: center;
-                font-size: 1.5rem;
+                font-size: 1.8rem;
+                font-weight: map-get($main_font_weight, Medium-500);
             }
             .contacto {
                 font-size: 1.8rem;
@@ -78,6 +80,11 @@ main {
         }
         .link_formulario {
             margin: 1rem 0rem;
+            display: flex;
+            justify-content: center;
+            .contacto{
+                text-align: left;
+            }
         }
     }
 }

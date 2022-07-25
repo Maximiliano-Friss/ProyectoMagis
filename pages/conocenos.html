@@ -1,100 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-	<!--Google Fonts-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap" rel="stylesheet">
-	<!--Custom CSS -->
-	<link rel="stylesheet" href="../css/styles.css">
-	<title>Proyecto Magis</title>
-    <link rel="icon" type="image/x-icon" href="../assets/img/logo_magis_icon.png">
-</head>
-<body>
-    <!-- HEADER/NAVBAR -->
-    <div class="container-fluid">	
-	    <header class="row">
-		    <div class="col-3 brand_container">
-			    <a class="navbar-brand" href="../index.html">
-				    <img src="../assets/img/logo_magis.png" alt="Logo Magis">
-			    </a>
-		    </div>
-		    <nav class="col-9 navbar navbar-expand-lg navbar_container">
-			    <div class="container-fluid">
-				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					    <span class="navbar-toggler-icon"></span>
-				    </button>
-				    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					    <div class="navbar-nav navbar_links_container">
-                            <a class="navbar_link" aria-current="page" href="../index.html">Inicio</a>
-                            <a class="navbar_link" href="#">Conocenos</a>
-						    <a class="navbar_link" href="./que_hacemos.html">¿Qué hacemos?</a>
-						    <a class="navbar_link" href="./como_participar.html">¿Cómo participar?</a>
-                            <a class="navbar_link_special" href="./como_participar.html#Sumate">Sumate</a>
-					    </div>
-				    </div>
-			    </div>
-		    </nav>
-	    </header>
-    </div>
-
-    <main class="container-fluid"> 
-    <!-- CONOCENOS -->
-        <div class="container-fluid px-0">
-            <div class="row">
-                <div class="barra_horizontal d-flex align-items-center justify-content-center">
-                    <h2>Conocenos</h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+        <!--Custom CSS -->
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Proyecto Magis - Conocenos</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/logo_magis_icon.png">
+    </head>
+    <body>
+        <!-- HEADER/NAVBAR -->
+        <div class="container-fluid">	
+            <header class="row">
+                <div class="col-3 brand_container">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/img/logo_magis.png" alt="Logo Magis">
+                    </a>
                 </div>
+                <nav class="col-9 navbar navbar-expand-lg navbar_container">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav navbar_links_container">
+                                <a class="navbar_link" aria-current="page" href="../index.html">Inicio</a>
+                                <a class="navbar_link" href="#">Conocenos</a>
+                                <a class="navbar_link" href="./que_hacemos.html">¿Qué hacemos?</a>
+                                <a class="navbar_link" href="./como_participar.html">¿Cómo participar?</a>
+                                <a class="navbar_link_special" href="./como_participar.html#Sumate">Sumate</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+        <!-- MAIN -->
+        <main class="container-fluid"> 
+
+            <!-- CONOCENOS -->
+            <div class="container-fluid px-0">
+                <div class="row">
+                    <div class="barra_horizontal d-flex align-items-center justify-content-center">
+                        <h2>Conocenos</h2>
+                    </div>
+                </div>
+                <section class="nosotros">
+                    <p class="nosotros_titulo">Somos un equipo de <span>jóvenes voluntarios</span> decididos a <span>no ser indiferentes a las problemáticas sociales</span> a las que hoy se enfrenta nuestro país.</p>
+                    <div class="container nosotros_card">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-6 nosotros_subcontainer">
+                                <div id="nosotros_img_1"></div>
+                            </div>
+                            <div class="col-6 nosotros_subcontainer2">
+                                <p>Creemos que un <b>futuro mejor es posible</b>, por eso <b>ofrecemos nuestro tiempo y nuestras capacidades</b> al servicio de quienes hoy más lo necesitan.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container nosotros_card">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-6 nosotros_subcontainer2">
+                                <p>Generamos diferentes <b>espacios que brindan herramientas</b> para dar acceso a <b>nuevas oportunidades</b> que contribuyen a <b>recuperar la dignidad</b> y a <b>promover el desarrollo</b> de cada una de las personas que se acercan al proyecto.</p>
+                            </div>
+                            <div class="col-6 nosotros_subcontainer">
+                                <div id="nosotros_img_2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="nosotros_titulo px-0">Buscamos ser para los niños, niñas y sus familias un <b>espacio de escucha, de contención y de refugio.</b></p>
+                </section>
             </div>
-            <section class="nosotros">
-                <p class="nosotros_titulo">Somos un equipo de <span>jóvenes voluntarios</span> decididos a <span>no ser indiferentes a las problemáticas sociales</span> a las que hoy se enfrenta nuestro país.</p>
-                <div class="container nosotros_card">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-6 nosotros_subcontainer">
-                            <div id="nosotros_img_1"></div>
-                        </div>
-                        <div class="col-6 nosotros_subcontainer2">
-                            <p>Creemos que un <b>futuro mejor es posible</b>, por eso <b>ofrecemos nuestro tiempo y nuestras capacidades</b> al servicio de quienes hoy más lo necesitan.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container nosotros_card">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-6 nosotros_subcontainer2">
-                            <p>Generamos diferentes <b>espacios que brindan herramientas</b> para dar acceso a <b>nuevas oportunidades</b> que contribuyen a <b>recuperar la dignidad</b> y a <b>promover el desarrollo</b> de cada una de las personas que se acercan al proyecto.</p>
-                        </div>
-                        <div class="col-6 nosotros_subcontainer">
-                            <div id="nosotros_img_2"></div>
-                        </div>
-                    </div>
-                </div>
-                <p class="nosotros_titulo px-0">Buscamos ser para los niños, niñas y sus familias un <b>espacio de escucha, de contención y de refugio.</b></p>
-            </section>
-        </div>
-    </main>
 
-    <footer class="container-fluid barra_horizontal d-flex align-items-center">
-        <div class="col-12 w-25 d-flex justify-content-evenly align-items-center">
-            <a href="https://www.instagram.com/proyectomagis/" target="_blank">
-                <img src="../assets/img/instagram.png" alt="instagram">
-            </a>
-            <a href="https://www.facebook.com/ProyectoMagis/" target="_blank">
-                <img src="../assets/img/facebook.png" alt="facebook">
-            </a>
-            <a href="https://www.linkedin.com/company/proyecto-magis/" target="_blank">
-                <img src="../assets/img/linkedin.png" alt="linkedin">
-            </a>
-            <a href="mailto:pmagisvoluntarios@gmail.com" target="_blank">
-                <img src="../assets/img/gmail.png" alt="gmail">
-            </a>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="container-fluid barra_horizontal d-flex align-items-center">
+            <div class="col-12 w-25 d-flex justify-content-evenly align-items-center">
+                <a href="https://www.instagram.com/proyectomagis/" target="_blank">
+                    <img src="../assets/img/instagram.png" alt="instagram">
+                </a>
+                <a href="https://www.facebook.com/ProyectoMagis/" target="_blank">
+                    <img src="../assets/img/facebook.png" alt="facebook">
+                </a>
+                <a href="https://www.linkedin.com/company/proyecto-magis/" target="_blank">
+                    <img src="../assets/img/linkedin.png" alt="linkedin">
+                </a>
+                <a href="mailto:pmagisvoluntarios@gmail.com" target="_blank">
+                    <img src="../assets/img/gmail.png" alt="gmail">
+                </a>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
 </html>

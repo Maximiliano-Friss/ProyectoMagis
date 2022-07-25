@@ -1,4 +1,7 @@
+// Estilos del Header
+
 @import 'fonts';
+
 header {
 	display: grid;
 	grid-template-columns: repeat(12,1fr);
@@ -12,20 +15,16 @@ header {
 		justify-content: center;
 		align-items: center;
 		grid-column: 2/3;
-
 		img {
             width: 4rem;
 		}
 	}
-
 	.navbar_container {
 		grid-column: 1/-1;
         margin-left: -8%;
-
 		.navbar_link {
 			text-decoration: none;
 		}
-
 		.navbar_link_special {
             text-decoration: none;
             font-size: 1.25rem;
@@ -35,7 +34,6 @@ header {
             padding: 0.5rem 2rem;
             filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
 		}
-		
 		.navbar_links_container {
 			display: flex;
             align-items: baseline;
@@ -44,7 +42,6 @@ header {
 		}
 	}
 }
-
 .navbar-toggler-icon {
     background-image: url(../assets/img/hamburger.png)
 }

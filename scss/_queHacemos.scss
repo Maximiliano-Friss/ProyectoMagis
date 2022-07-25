@@ -1,13 +1,11 @@
-/*Seccion Que hacemos*/
+/*Estilos de seccion Que hacemos*/
 
 main{
     min-height: 80vh;
 }
-
 .barra_footer_redes{
     margin-left: 5rem;
 }
-
 .queHacemos_ejes_container{
     min-height: 60rem;
     h3{
@@ -71,7 +69,6 @@ main{
         }
     }
 }
-
 .actividades{
     .actividades_titulo{
     font-weight: map-get($main_font_weight, Medium-500);
@@ -91,14 +88,12 @@ main{
         border-bottom-left-radius: 24px;
         border-bottom-right-radius: 24px;
         box-shadow: 14px 20px 10px -15px rgba(0, 0, 0, 0.25), -14px 20px 10px -15px rgba(0, 0, 0, 0.25);
-        
         .actividades_subcontainer{
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 318px;
-            
             @for $i from 1 to 10 {
                 #actividades_img_#{$i}{
                     background-repeat: no-repeat;
@@ -125,7 +120,6 @@ main{
         }
     }
 }
-
 footer{
     margin-top: 2.5rem;
 }

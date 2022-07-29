@@ -1,111 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--Bootstrap CSS -->
-	<link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-	<!--Google Fonts-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-	<!--Custom CSS -->
-	<link rel="stylesheet" href="./css/styles.css">
-	<title>Proyecto Magis</title>
-    <link rel="icon" type="image/x-icon" href="./assets/img/logo_magis_icon.png">
-</head>
-<body>
-    <div class="container-fluid">	
-	    <header class="row">
-		    <div class="col-3 brand_container">
-			    <a class="navbar-brand" href="#">
-				    <img src="./assets/img/logo_magis.png" alt="Logo Magis">
-			    </a>
-		    </div>
-		    <nav class="col-9 navbar navbar-expand-lg navbar_container">
-			    <div class="container-fluid">
-				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					    <span class="navbar-toggler-icon"></span>
-				    </button>
-				    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					    <div class="navbar-nav navbar_links_container">
-						    <a class="navbar_link" aria-current="page" href="#">Inicio</a>
-                            <a class="navbar_link" href="#">Conocenos</a>
-						    <a class="navbar_link" href="#">¿Qué hacemos?</a>
-						    <a class="navbar_link" href="#">¿Cómo participar?</a>
-						    <a class="navbar_link" href="#">Testimonios</a>
-					    	    <a class="navbar_link_special" href="#">Sumate</a>
-					    </div>
-				    </div>
-			    </div>
-		    </nav>
-	    </header>
-    </div>
-	<main class="container-fluid">
-		<section class="row main_portada">
-            <div class="col">
-                <h1>Magis es MÁS</h1>
-				<h1>MÁS dignidad, MÁS desarrollo, MÁS oportunidades</h1>
-			</div>
-		</section>
-		<section class="row main_conocenos">
-			<div class="col">
-                <h2>conocenos</h2>
-				<p>Somos una organización de voluntarios, que desde el año 2014 ofrecemos nuestra ayuda 
-				    a las familias de Barrio Aeropuerto porque creemos que a través de la educación y 
-					del acompañamiento personal, podemos trabajar juntos para salir de la pobreza estructural 
-					y la exclusión social. 
-				</p>
-			</div>
-		</section>
-		<section class="row main_mapa">
-			<div class="col-6">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+        <!--Custom CSS -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>Proyecto Magis</title>
+        <link rel="icon" type="image/x-icon" href="./assets/img/logo_magis_icon.png">
+    </head>
+    
+    <body>
 
-			</div>
-			<div class="col-6 d-flex flex-column justify-content-end">
-                <h2>donde trabajamos</h2>
-				<p>Contamos con un centro dónde desarrollamos nuestros servicios. Ubicado en Villa Elvira, La Plata</p>
-				<div class="d-flex flex-row-reverse">		
-					<button type="button" class="btn btn-secondary rounded-pill">ver más</button> 
-				</div>
-			</div>
-		</section>
-		<section class="row">
+        <!-- HEADER/NAVBAR -->
+        <div class="container-fluid">	
+            <header class="row">
+                <div class="col-3 brand_container">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/img/logo_magis.png" alt="Logo Magis">
+                    </a>
+                </div>
+                <nav class="col-9 navbar navbar-expand-lg navbar_container">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav navbar_links_container">
+                                <a class="navbar_link" aria-current="page" href="#">Inicio</a>
+                                <a class="navbar_link" href="./pages/conocenos.html">Conocenos</a>
+                                <a class="navbar_link" href="./pages/que_hacemos.html">¿Qué hacemos?</a>
+                                <a class="navbar_link" href="./pages/como_participar.html">¿Cómo participar?</a>
+                                <a class="navbar_link_special" href="./pages/como_participar.html#Sumate">Sumate</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </div>
 
-		</section>
-		<section class="row">
+        <!-- MAIN -->
+        <main class="container-fluid">
 
-		</section>
-		<section class="row">
+            <!-- PORTADA -->
+            <section class="row main_portada">
+                <div class="col-7 portada_h1">
+                    <h1 class="portada_h1_titulo">Magis es MÁS</h1>
+                    <h2>MÁS dignidad, MÁS desarrollo, MÁS oportunidades</h2>
+                </div>
+            </section>
+            <section class="row main_conocenos">
+                <div class="col">
+                    <h2>Conocenos</h2>
+                    <p class="conocenos_p"><b>Somos una organización de voluntarios</b>, que desde el año 2014 ofrecemos nuestra <b>ayuda 
+                        a las familias de Barrio Aeropuerto.</b></p>
+                    <p class="conocenos_p">Creemos que <b>a través de la educación y del acompañamiento personal</b>, podemos trabajar juntos para 
+                    <b>salir de la pobreza estructural y la exclusión social.</b> <a class="link_ver_mas" href="./pages/conocenos.html">Saber más</a></p> 
+                </div>
+            </section>
 
-		</section>
-	</main>
-		<section id="banner"></section>
+            <!-- MAPA -->
+            <section class="row main_mapa">
+                <div class="col-6 main_mapa_img">
+                    <img src="./assets/img/mapa_magis.png" alt="Ubicación">
+                </div>
+                <div class="col-6">
+                    <h2>Dónde trabajamos</h2>
+                    <p class="w-60">Contamos con un espacio ubicado<br/> en Barrio Aeropuerto, donde llevamos<br/>a cabo nuestros talleres y actividades.</p>
+                </div>
+            </section>
 
-    <div class="container-fluid">
-	    <footer class="row d-flex flex-column">
-            <section class="col">
-                <h2>contacto</h2>
-				<p>Podés contactarnos por Instagram @proyectomagis o al gmail pmagisvoluntarios@gmail.com</p>
-			</section>
-			<section class="col">
-                <p>Acá iconos de redes sociales</p>
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-			</section>
-			<section class="col">
-                <p>Siguiendónos y compartiendo nuestras publicaciones nos ayudas a que más gente pueda conocer Proyecto Magis</p>
-			</section>
-			<section class="col">
-                <p>Acá logo</p>
-				<img src="" alt="">
-			</section>
-	    </footer>
-    </div>
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-</body>
+            <!-- FILOSOFIA -->
+            <section class="row main_filosofia">
+                <div class="col-12">
+                    <h2>Nuestra filosofía</h2>
+                    <div class="filosofia_palabras">
+                        <img src="assets/img/icono_escucha.png" alt="escucha">
+                        <h3>escucha</h3>
+                        <img src="assets/img/icono_contencion.png" alt="contencion">
+                        <h3>contención</h3>
+                        <img src="assets/img/icono_refugio.png" alt="refugio">
+                        <h3>refugio</h3>
+                    </div>
+                    <p class="filosofia_texto">Ayudamos a <b>niños, niñas y adolescentes</b> a desarrollar sus <b>capacidades, conocimientos y habilidades.</b></p>
+                    <p class="filosofia_texto">Los acompañamos para que puedan <b>ampliar su horizonte de oportunidades</b> y así <b>alcanzar un nivel de vida digno.</b></p>
+                </div>	
+            </section>
+
+            <!-- INDICES -->
+            <div class="row px-0">
+                <section class="row main_indices mx-0 px-0">
+                    <div class="col-12 mx-0 px-0">
+                        <h2>Esta es la realidad que queremos modificar:</h2>
+                        <div id="carouselExampleCaptions" class="col-sm-12 carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active carousel-item-background" id="carousel_imagen_1">
+                                <img src="assets/img/indicador1.png" class="d-block w-100" alt="indicador1">
+                                <div class="carousel-caption-container">
+                                    <h5><b>1 de cada 2 niños/as</b><br> 
+                                    vive en situación de pobreza.</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item carousel-item-background">
+                                <img src="assets/img/indicador2.png" class="d-block w-100" alt="indicador2">
+                                <div class="carousel-caption-container">
+                                    <h5><b>Solo 16 de cada 100 estudiantes</b><br> 
+                                    termina la secundaria a tiempo y con saberes.</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item carousel-item-background">
+                                <img src="assets/img/indicador3.png" class="d-block w-100" alt="indicador3">
+                                <div class="carousel-caption-container">
+                                    <h5><b>Solo 3 de cada 10 personas</b><br> 
+                                    de sectores vulnerables terminan el secundario.</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item carousel-item-background">
+                                <img src="assets/img/indicador4.png" class="d-block w-100" alt="indicador4">
+                                <div class="carousel-caption-container">
+                                    <h5><b>Solo 1 de cada 10 jóvenes</b><br> 
+                                    de los sectores más pobres acceden a la universidad.</h5>
+                                </div>
+                            </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- EJES -->
+            <section class="row main_ejes">
+                <div class="ejes_encabezado">
+                    <p class="ejes_encabezado_p">En <b>Magis</b> trabajamos especialmente haciendo <b>foco en la dimensión educativa,</b> que no solo implica la <b>educación formal,</b> sino también la <b>formación integral como personas.</b></p>
+                </div>
+                <div class="col ejes_inferior">
+                    <h2>Ejes del proyecto</h2>
+                    <div class="ejes_imagenes">
+                        <div class="eje_educacion">
+                            <p class="eje_p">Educación</p>
+                        </div>
+                        <div class="eje_acompañamiento">
+                            <p class="eje_p">Acompañamiento <br> a familias</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- ODS -->
+            <section class="row main_objetivos">
+                <div class="col">
+                    <p>Trabajamos alineados a los siguientes <br><span>Objetivos de Desarrollo Sostenible</span></p>
+                    <div>
+                        <img src="assets/img/objetivo1.png" alt="fin de la pobreza">
+                        <img src="assets/img/objetivo2.png" alt="salud y bienestar">
+                        <img src="assets/img/objetivo3.png" alt="educación de calidad">
+                        <img src="assets/img/objetivo4.png" alt="igualdad de genero">
+                    </div>
+                    <div>
+                        <img src="assets/img/objetivo5.png" alt="trabajo decente y crecimiento economico">
+                        <img src="assets/img/objetivo6.png" alt="reduccion de las desigualdades">
+                        <img src="assets/img/objetivo7.png" alt="justicia e instituciones solidas">
+                        <img src="assets/img/objetivo8.png" alt="objetivos de desarrollo sostenible">
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <!-- FOOTER -->
+        <div class="container-fluid">
+            <footer class="row d-flex flex-column">
+                <section class="col">
+                    <h2>contacto</h2>
+                    <p>Podés contactarnos por Instagram <span>@proyectomagis</span> <br> o al gmail <span>pmagisvoluntarios@gmail.com</span> </p>
+                </section>
+                <section class="col redes">
+                    <div class="row">
+                        <div class="col-4 mx-auto">
+                            <a href="https://www.instagram.com/proyectomagis/" target="_blank">
+                                <img src="assets/img/instagram.png" alt="instagram">
+                            </a>
+                            <a href="https://www.facebook.com/ProyectoMagis/" target="_blank">
+                                <img src="assets/img/facebook.png" alt="facebook">
+                            </a>
+                            <a href="https://www.linkedin.com/company/proyecto-magis/" target="_blank">
+                                <img src="assets/img/linkedin.png" alt="linkedin">
+                            </a>
+                            <a href="mailto:pmagisvoluntarios@gmail.com" target="_blank">
+                                <img src="assets/img/gmail.png" alt="gmail">
+                            </a>
+                        </div>
+                    </div>	
+                </section>
+                <section class="col">
+                    <p class="footer-seguinos">Siguiéndonos y compartiendo nuestras publicaciones <br> nos ayudás a que más gente pueda conocer <br> Proyecto Magis</p>
+                </section>
+                <section class="col logo">
+                    <img src="assets/img/logoFooter.png" alt="logo">
+                </section>
+            </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
 </html>

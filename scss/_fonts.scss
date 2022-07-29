@@ -1,4 +1,9 @@
-@font-face {
-    font-family: 'font-titulos';
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
-}
+$main_font: 'Montserrat', sans-serif;
+
+$main_font_weight: (
+    ExtraBold-800: 800,
+    SemiBold-600: 600,
+    Medium-500: 500,
+    Regular-400: 400,
+    Light-300: 300
+);

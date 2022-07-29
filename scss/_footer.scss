@@ -1,15 +1,55 @@
+//Estilos del Footer
+
 footer {
 	justify-self: flex-end;
 	section {
 		margin: 1rem 0rem;
 		h2 {
 			text-align: center;
-			text-transform: uppercase;
-			font-weight: bold;
-			margin: 1rem 0rem;
+			text-transform: capitalize;
+			margin: 2rem 0rem;
 		}
 		p {
             text-align: center;
+			margin: 1rem 0rem;
+            font-weight: map-get($main_font_weight, Medium-500);
+            font-size: 2.125rem;
+            span{
+                font-weight: map-get($main_font_weight, SemiBold-600);
+            }
+		}
+	}
+	.redes {
+		div {
+            div {
+				display: flex;
+				align-items: center;
+				justify-content: space-evenly;
+				margin: 2rem 0rem;
+			}
+		}
+	}
+    .footer-seguinos{
+        font-weight: map-get($main_font_weight, SemiBold-600);
+    }
+	.logo {
+		display: flex;
+		justify-content: center;
+        margin-bottom: 8.6rem;
+	}
+}
+.footer_background {
+	background-color: #F4D245;
+	padding: 2.5rem;
+	section {
+		div {
+			div {
+			    display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				justify-content: space-evenly;
+				margin: 2rem 0rem;
+			}
 		}
 	}
 }

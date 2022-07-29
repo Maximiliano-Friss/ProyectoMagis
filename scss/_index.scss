@@ -1,55 +1,230 @@
-/*Estilos del index*/
+//Estilos del index
 
 main {
     .main_portada{
-        background-image: insertar imagen;
-        div{
-            h1{
+        background-image: url(../assets/img/portada.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30.25rem;
+        position: relative;
+        .portada_h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .portada_h1_titulo{
+                color: #FFFFFF;
                 text-align: center;
-                margin: 2rem 0rem;
+                font-size: 3rem;
+                font-weight: map-get($main_font_weight, ExtraBold-800);
+                padding: 0 5%;
+                filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
             }
+            h2{
+                @extend .portada_h1_titulo;
+                margin-top: 1rem;
+            }
+        }
+        &:before {
+            content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: black;
+                opacity: .25; 
         }
     }
     .main_conocenos{
-        background-color: #FAB802; 
+        background-color: #F4D245;
+        height: 26.8rem;
         div{
-            h2{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            .conocenos_p{
                 text-align: center;
-                text-transform: uppercase;
-                font-weight: bold;
-                margin: 2rem 0rem;
-            }
-            p{
-                text-align: center;
-                margin: 2rem 0rem;
+                margin: 1rem 0rem;
+                padding: 0 5%;
+                a {
+                    text-decoration: underline;
+                    font-size: 1.25rem;
+                    font-weight: map-get($main_font_weight, SemiBold-600);
+                    filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+                    margin-left: 0.8rem;
+                }
             }
         }
     }
     .main_mapa{
-        background-color: #F5F5F5;
+        background-color: #FFFFFF;
+        height: 39.5rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        .main_mapa_img{
+            img{
+                align-self: flex-end;
+            }
+        }
         div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
             h2{
-                text-align: center;
-                text-transform: uppercase;
-                font-weight: bold;
-                margin: 2rem 0rem;
+                margin-top: -4rem;
+                margin-bottom: 2rem;
             }
             p{
                 text-align: center;
-                margin: 0rem 1rem 2rem 0rem;
+                margin-left: 2rem;
             }
-            div{
-                margin: 2rem 0rem;
-                .btn-secondary {
-                    width: 20%;
+        }
+    }
+    .main_filosofia {
+        background-color: #F4D245;
+        height: 24.5rem;
+        h2 {
+            margin-top: auto;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: -1rem;
+            .filosofia_palabras {
+                display: flex;
+                flex-direction: row;
+                h3{
+                    font-size: 2.125rem;
+                    margin: 2rem 2rem 2rem 1rem;
+                    text-transform: capitalize;
+                    font-weight: map-get($main_font_weight, SemiBold-600);
+                }
+            }
+            .filosofia_texto {
+                text-align: center;
+                padding: 0 5%;
+            }
+        }
+    }
+    .main_indices {
+        margin: 5.5rem -2rem 3rem;
+        h2 {
+            margin: 2rem 0rem;
+        }
+        .carousel-inner{
+            .carousel-item-background{
+                background-color: black;
+                position: relative;
+                img{
+                    opacity: 0.6;
+                }
+            }
+            .carousel-caption-container{
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                h5{
+                    color: #FFFFFF;
+                    font-size: 2.5rem;
+                    text-align: center;
+                    filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+                }
+            }
+        }
+    }
+    .main_ejes {
+        .ejes_encabezado{
+            height: 13.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .ejes_encabezado_p{
+                font-size: 2.125rem;
+                font-weight: map-get($main_font_weight, Medium-500);
+                margin-bottom: 3.1rem;
+                text-align: center;
+                padding: 0 5%;
+            }
+        }
+        .ejes_inferior {
+            background-color: #F4D245;
+            height: 35rem;
+            h2 {
+                margin: 2rem 0 3.1rem;
+            }
+            .ejes_imagenes{
+                display: flex; 
+                flex-flow: row nowrap;
+                justify-content: space-around;
+                align-items: center;
+                height: fit-content;
+                padding: 0 10%;
+                margin: 0 auto;
+                .eje_educacion {
+                    background-image: url("../assets/img/educacion.png");
+                    background-repeat: no-repeat;
+                    border-radius: 12px;
+                    width: 355px;
+                    height: 355px;
+                    position: relative;
+                    filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+                    &:before {
+                        content: '';
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            background: black;
+                            opacity: .25; 
+                            border-radius: 12px;
+                    }
+                }
+                .eje_acompañamiento {
+                    @extend .eje_educacion;
+                    background-image: url("../assets/img/familia.png");
+                }
+                .eje_p {
+                    color: #FFFFFF;
                     font-weight: bold;
-                    text-transform: uppercase;
-                    color: #212427;
-                    background-color: #D9D9D9;
-                    margin-right: 2rem;
+                    font-size: 2rem;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+                }
+            }
+        }
+    }
+    .main_objetivos {
+        div {
+            p {
+                text-align: center;
+                margin: 2rem 0rem;
+                font-size: 2.8rem;
+                font-weight: map-get($main_font_weight , Light-300);
+                span{
+                    font-weight: map-get($main_font_weight , Medium-500);
+                }
+            }
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 2rem 6.25rem 4rem;
+                img {
+                    padding: 1rem;
                 }
             }
         }
     }
 }
-
